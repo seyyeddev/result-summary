@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     overflow: hidden;
-    margin: 0 auto; 
+    margin: 0 auto;
 
     //responsive
     @include tablet-responsive() {
@@ -46,7 +46,7 @@
 
     &__describe {
         color: $white;
-        font-size: 1.5;
+        font-size: 1.5rem;
         letter-spacing: 0.1rem;
     }
 
@@ -171,6 +171,7 @@
 }
 
 .summary__btn {
+
     width: 100%;
     text-align: center;
     background-color: $darkGrayBlue;
@@ -179,9 +180,20 @@
     padding: 1.2rem 1rem;
     border: none;
     outline: none;
+    transition: all 0.3s ease-in;
+
+
 
     //responsive
     @include tablet-responsive() {
         padding: 1rem;
+    }
+
+    @include desktop-responsive() {
+        cursor: pointer;
+
+        &:hover {
+            background-image: linear-gradient(to bottom, $lightSlateBlue-bg, $lightRoyalBlue-bg);
+        }
     }
 }

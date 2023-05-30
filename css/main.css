@@ -69,7 +69,7 @@
 }
 .result__describe {
   color: hsl(0, 0%, 100%);
-  font-size: 1.5;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
 }
 .result__caption {
@@ -178,10 +178,19 @@
   padding: 1.2rem 1rem;
   border: none;
   outline: none;
+  transition: all 0.3s ease-in;
 }
 @media only screen and (min-width: 48rem) {
   .summary__btn {
     padding: 1rem;
+  }
+}
+@media only screen and (min-width: 64.063rem) {
+  .summary__btn {
+    cursor: pointer;
+  }
+  .summary__btn:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
 }
 
